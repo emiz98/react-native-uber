@@ -1,11 +1,10 @@
 import { View } from "react-native";
 import MapView, { Marker, Polyline } from "react-native-maps";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import {
   selectDestination,
   selectOrigin,
   selectPolyline,
-  setOrigin,
 } from "../slices/navSlice";
 import Start from "./markers/Start";
 import End from "./markers/End";
@@ -14,8 +13,6 @@ const Map = () => {
   const origin = useSelector(selectOrigin);
   const destination = useSelector(selectDestination);
   const polyline = useSelector(selectPolyline);
-  const dispatch = useDispatch();
-
   return (
     <View className="h-full">
       <MapView

@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.emiz.uber"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2a83559d-4fe4-40a1-bcad-11d9751b2c84"
+      }
+    },
+    "owner": "emiz98"
   }
 }

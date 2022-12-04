@@ -39,7 +39,6 @@ const NavOptions = ({ search }) => {
         maximumAge: 10000,
       });
       setMyLoc(location);
-      //
     })();
   }, []);
 
